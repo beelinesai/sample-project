@@ -32,13 +32,12 @@ This is a super-simple starter project showing you how to use the Beelines AI SD
 3. **Set up your environment**
 
    ```bash
-   cp .env.sample .env
-   # Add your Beelines API key to .env
+   cp .env.example .env
    ```
 
 4. **Run the sample**
    ```bash
-   bun start
+   bun run index.ts
    ```
 
 ## 🔑 Configuration

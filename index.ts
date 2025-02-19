@@ -1,12 +1,18 @@
 import { Beelines } from "@beelinesai/sdk";
-import { beelinesApiKey } from "./config";
+import { beelinesApiKey, beelinesApiEndpoint } from "./config";
 
 const client = new Beelines({
-  endpoint: "https://api.beelines.ai/graphql",
+  endpoint: beelinesApiEndpoint,
   apiKey: beelinesApiKey,
 });
 
-const result = await client.developers.byId("your_developer_id_here");
-// const dimensions = await client.sdk.dimensions();
+// Replace with your actual email, the one used to create the account.
+const email = "your.email@example.com";
 
-console.log('result', result);
+const dev = await client.developers.byEmail(email);
+
+const agent = await client.agents.create(dev.result?.id!, {
+  name: "BitWise Betty",
+});
+
+console.log('agent', agent);
