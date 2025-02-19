@@ -19,16 +19,14 @@ This is a super-simple starter project showing you how to use the Beelines AI SD
 1. **Clone this repo**
 
    ```bash
-   git clone https://github.com/yourusername/beelines-sample-project
-   cd beelines-sample-project
+   git clone https://github.com/beelinesai/sample-project
+   cd sample-project
    ```
 
 2. **Install dependencies**
 
    ```bash
-   npm install
-   # or
-   yarn install
+   bun install
    ```
 
 3. **Set up your environment**
@@ -40,9 +38,7 @@ This is a super-simple starter project showing you how to use the Beelines AI SD
 
 4. **Run the sample**
    ```bash
-   npm start
-   # or
-   yarn start
+   bun start
    ```
 
 ## 🔑 Configuration
