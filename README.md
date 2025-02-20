@@ -46,6 +46,7 @@ Make sure to set up your `.env` file with your Beelines API key:
 
 ```env
 BEELINES_API_KEY=your_api_key_here
+BEELINES_API_ENDPOINT=https://api.beelines.ai/graphql
 ```
 
 ## 📖 What Can You Do?
