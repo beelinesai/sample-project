@@ -42,11 +42,12 @@ This is a super-simple starter project showing you how to use the Beelines AI SD
 
 ## 🔑 Configuration
 
-Make sure to set up your `.env` file with your Beelines API key:
+Make sure to set up your `.env` file with your Beelines API key and email:
 
 ```env
 BEELINES_API_KEY=your_api_key_here
 BEELINES_API_ENDPOINT=https://api.beelines.ai/graphql
+BEELINES_EMAIL=your.email@example.com
 ```
 
 ## 📖 What Can You Do?
