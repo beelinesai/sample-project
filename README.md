@@ -37,7 +37,7 @@ This is a super-simple starter project showing you how to use the Beelines AI SD
 
 4. **Run the sample**
    ```bash
-   bun run index.ts
+   bun start
    ```
 
 ## 🔑 Configuration

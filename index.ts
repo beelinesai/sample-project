@@ -11,6 +11,8 @@ const email = "your.email@example.com";
 
 const dev = await client.developers.byEmail(email);
 
+if (!dev.success) throw dev.errors;
+
 const agent = await client.agents.create(dev.result?.id!, {
   name: "BitWise Betty",
 });
