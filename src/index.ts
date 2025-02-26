@@ -27,7 +27,7 @@ const messageId = await client.chat.threads.message(chat.latestThread.id, {
 let response = await client.chat.threads.response(messageId);
 
 while (response?.status !== BeelineStatus.Completed) {
-  await new Promise((resolve) => setTimeout(resolve, 1000));
+  await new Promise((resolve) => setTimeout(resolve, 5000));
   response = await client.chat.threads.response(messageId);
 }
 
